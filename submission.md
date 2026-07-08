@@ -80,3 +80,6 @@ Expected: every song in the playlist is returned, including the newest. Actual: 
 
 ## How I reproduced the bugs
 
+## How I used AI
+I used Claude AI to help me navigate and summarize the codebase and provided it specific question to help me trace the root cause. 
+
