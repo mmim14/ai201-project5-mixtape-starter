@@ -61,6 +61,8 @@ Searched for a song (GET /songs/search?q=Anthem).
 Counted the results.
 Expected: each matching song appears exactly once. Actual: some songs appear once, others two or three times, for a single-song match.
 
+### The bug is because the songs the beeing joined by tags and a song having multiple tags will produce duplicates. 
+
 ### Bug 3
 Issue #5 — The last song in a playlist never shows up
 Reported by: darius
