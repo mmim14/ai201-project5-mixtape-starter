@@ -1,4 +1,5 @@
 ## Codebase map from Readme
+```
 ai201-project5-mixtape-starter/
 ├── app.py                      # Flask app factory and DB setup
 ├── models.py                   # SQLAlchemy models for all entities
@@ -20,7 +21,7 @@ ai201-project5-mixtape-starter/
 ├── seed_data.py                # Populates DB with test data
 ├── requirements.txt
 └── .gitignore
-
+```
 ## Main files
 app.py - sets up the database, configures the app, and registers 4 route: /songs, /playlists, /users, and feed
 
