@@ -75,5 +75,7 @@ Opened the playlist (GET /playlists/<playlist_id>/songs) and counted the songs.
 Added one more song (POST /playlists/<playlist_id>/songs) and re-fetched.
 Expected: every song in the playlist is returned, including the newest. Actual: the most recently added song is always missing; adding another song "frees" the previous one and hides the new one instead.
 
+### the return statement [song.to_dict() for song in songs[:-1]] deprecates the last element. We want to return all the songs. 
+
 ## How I reproduced the bugs
 
