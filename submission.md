@@ -50,7 +50,7 @@ Expected: streak goes from 12 to 13 — I listened on consecutive days. Actual: 
 
 The error is happening because there's a logic error in steak_service.py update_listening_streak function. It checks if the weekday() != 6, which in python is Sunday, so the streak resets on Sunday. We don't want that condition. 
 
-------------------------------------
+
 ### Bug 2
 Issue #3 — The same song keeps showing up twice in search
 Reported by: simone
@@ -65,7 +65,7 @@ Expected: each matching song appears exactly once. Actual: some songs appear onc
 
 The bug is because the songs the beeing joined by tags and a song having multiple tags will produce duplicates. 
 
-------------------------------------------
+
 ### Bug 3
 Issue #5 — The last song in a playlist never shows up
 Reported by: darius
@@ -80,7 +80,7 @@ Expected: every song in the playlist is returned, including the newest. Actual: 
 
 The return statement [song.to_dict() for song in songs[:-1]] deprecates the last element. We want to return all the songs. 
 
-----------------------------------------
+
 ## How I reproduced the bugs
 
 ## How I used AI
